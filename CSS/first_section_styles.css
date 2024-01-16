@@ -1,0 +1,144 @@
+#first_section {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 8vw;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first_section_description {
+    width: 44vw;
+    height: auto;
+}
+
+h1 {
+    color: #131318;
+
+    font-family: Mulish;
+    font-size: 3vw;
+    font-weight: 800;
+
+    margin-bottom: 4vw;
+}
+
+#first_section_description p {
+    color: rgba(19, 19, 24, 0.70);
+
+    font-family: Mulish;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#first_section_description> ul {
+    padding-left: 3vw;
+
+    color: rgba(19, 19, 24, 0.70);
+
+    font-family: Mulish;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+#first_section_button_div{
+    margin-top: 4vw;
+}
+#first_section_button {
+    height: 4vw;
+    width: 12vw;
+    border: none;
+    border-radius: 0.3vw;
+    background-color: #FF5400;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+
+#first_section_image {
+    width: 44vw;
+    height: 44vw;
+    border-radius: 1vw;
+}
+
+
+#first_section_image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    #first_section{
+        flex-direction: column;
+        gap: 5vw;
+    }
+    #first_section_description,
+    #first_section_image{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    #first_section_description p,
+    #first_section_description> ul{
+        font-size: 2vw;
+    }
+    #first_section_button_div{
+        margin-top: 8vw;
+        margin-bottom: 10vw;
+
+        display: flex;
+        justify-content: center;
+    }
+    #first_section_button {
+        height: 8vw;
+        width: 24vw;
+        border-radius: 0.6vw;
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #first_section{
+        flex-direction: column;
+        gap: 5vw;
+    }
+    #first_section_description,
+    #first_section_image{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    #first_section_description p,
+    #first_section_description> ul{
+        font-size: 3vw;
+    }
+    #first_section_button_div{
+        margin-top: 8vw;
+        margin-bottom: 10vw;
+
+        display: flex;
+        justify-content: center;
+    }
+    #first_section_button {
+        height: 8vw;
+        width: 24vw;
+        border-radius: 0.6vw;
+        font-size: 3vw;
+    } 
+}
