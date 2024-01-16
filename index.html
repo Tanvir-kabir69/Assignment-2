@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+   <link rel="stylesheet" href="CSS/body_styles.css">
+   <link rel="stylesheet" href="CSS/header_styles.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class="slide_navbar">
+                <li onclick=hide_slidebar()><a href=""><span
+                            class="material-symbols-outlined close_icon">close</span></a></li>
+                <li ><a href=""><p class="nav_li">Home</p></a></li>
+                <li ><a href=""><p class="nav_li">Packages</p></a></li>
+                <li ><a href=""><p class="nav_li">Testimonial</p></a></li>
+                <li ><a href=""><p class="nav_li">Blog</p></a></li>
+                <li ><a href=""><p class="nav_li">Contact</p></a></li>
+            </ul>
+            <ul>
+                <li id="title_bar">
+                    <div id="title_bar_icon_div">
+
+                    </div>
+                    <p>Chill Dewa <span class="color">Trip</span></p>
+                </li>
+                <li class="hide"><a class="color" href=""><p class="nav_li">Home</p></a></li>
+                <li class="hide"><a href=""><p class="nav_li">Packages</p></a></li>
+                <li class="hide"><a href=""><p class="nav_li">Testimonial</p></a></li>
+                <li class="hide"><a href=""><p class="nav_li">Blog</p></a></li>
+                <li class="hide"><a href=""><p class="nav_li">Contact</p></a></li>
+                <li id="menu_button" style="cursor: pointer;" onclick=show_slidebar()><a href="#"><span
+                            class="material-symbols-outlined menu_icon">menu</span></a></li>
+            </ul>
+        </nav>
+        <script>
+            function show_slidebar() {
+                const slide_navbar = document.querySelector('.slide_navbar')
+                slide_navbar.style.display = 'flex'
+            }
+
+            function hide_slidebar() {
+                const slide_navbar = document.querySelector('.slide_navbar')
+                slide_navbar.style.display = 'none'
+            }
+
+        </script>
+        <div id="header_img_div">
+            <p id="header_title">Explore Your Travel</p>
+
+            <div id="header_description_div">
+                <p id="header_description">Welcome to our travel agency, where personalized service awaits your exciting adventures.<br>Let our dedicated team make your journey unforgettable.</p>
+            </div>
+
+            <div id="header_blury_div">
+                <div class="header_selection_div where">
+                    <p>Where to go</p>
+                </div>
+
+                <div class="header_selection_div when">
+                    <p>when</p>
+                    <p><span class="material-symbols-outlined">
+                            expand_more
+                        </span></p>
+                </div>
+
+                <div class="header_selection_div how">
+                    <p>Select type</p>
+                    <p><span class="material-symbols-outlined">
+                            expand_more
+                        </span></p>
+                </div>
+
+                <div class="header_selection_div find">
+                    <p><span class="material-symbols-outlined">
+                            search
+                        </span></p>
+                    <p>Find</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+
+</html>
