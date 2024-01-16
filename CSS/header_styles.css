@@ -285,7 +285,7 @@ nav li:hover {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 992px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
     #menu_button {
         display: block;
     }
