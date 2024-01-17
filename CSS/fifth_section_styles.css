@@ -127,8 +127,10 @@
         width: 100%;
         height: 50vh;
     }
-    #fifth_section_newsletter_area_div{
+    #fifth_section_newsletter_area_div,
+    #newsletter_horizontal_line{
         width: 70%;
     }
+
 
 }
